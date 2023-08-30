@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: $font-main;
+  max-width: 1920px;
+  // display: grid;
+  // place-content: center;
+  margin: 0 auto;
+  width: 100%;
+  // align-items: center;
+}

@@ -1,0 +1,202 @@
+.registration {
+  position: relative;
+  padding: 220px 0 260px;
+  background: linear-gradient(180deg, #d9f0ff 0%, #bfebe3 50.52%);
+}
+
+.registration__aside {
+  position: absolute;
+  left: 2px;
+}
+
+.registration__aside-span {
+  position: relative;
+}
+
+.registration__wrapper {
+  position: relative;
+}
+
+.registration__title {
+  text-align: center;
+}
+.registration__title-hr {
+  width: 282px;
+  color: $color-black;
+  background-color: $color-black;
+  height: 2px;
+  border: none;
+  margin: 40px auto;
+}
+
+//  ______________________FORM_____________
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.registration__row {
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  height: 73px;
+  background: none;
+  color: $color-black;
+  border: none;
+  outline: none;
+  font-size: 21px;
+  font-weight: 500;
+  border-bottom: 2px solid $color-black;
+  transition: all 0.5s ease;
+}
+
+.input::placeholder {
+  color: $color-black;
+}
+
+.input-checkmark {
+  position: absolute;
+  top: 22px;
+}
+.input-checkmark-name {
+  left: 325px;
+}
+.input-checkmark-email {
+  left: 232px;
+}
+.checkmark {
+  color: #fb7070;
+  font-weight: 900;
+  font-size: 16px;
+}
+.input-after {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  bottom: 85%;
+  opacity: 0;
+  transition: all 0.5s ease;
+  font-size: 21px;
+  font-weight: 500;
+  color: $color-blackhover;
+}
+
+/* slide effects */
+.input ~ .input-after {
+  bottom: 40%;
+  scale: 0.95;
+}
+
+.input:not(:placeholder-shown) ~ .input-after {
+  visibility: visible;
+  opacity: 1;
+  bottom: 90%;
+  scale: 0.9;
+}
+.input:not(:placeholder-shown) ~ .input-checkmark {
+  visibility: hidden;
+}
+
+.terms {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.registration__message {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  & label {
+    color: $color-black;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+  & textarea {
+    border: none;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 26px;
+    color: $color-black;
+    padding: 20px;
+    &::placeholder {
+      color: $color-blackhover;
+      font-weight: 400;
+    }
+  }
+}
+
+.registration__terms-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  &:first-child {
+    margin-bottom: 12px;
+  }
+}
+
+// input:invalid + .input-beforeName:after,
+// input:invalid + .input-beforeEmail:after {
+//   content: "*";
+//   color: #fb7070;
+//   position: relative;
+//   font-size: 16px;
+//   font-weight: 900;
+//   padding: 0px;
+// }
+
+// input:invalid + .input-beforeWhatsApp:after,
+// input:invalid + .input-beforeTelegram:after {
+//   content: "*";
+//   color: #fb7070;
+//   position: relative;
+//   font-size: 16px;
+//   font-weight: 900;
+//   padding: 0px;
+// }
+// input:invalid + .input-beforeWhatsApp:after {
+//   left: 7.4rem;
+//   top: -2.1rem;
+// }
+// input:invalid + .input-beforeTelegram:after {
+//   left: 6.6rem;
+//   top: -2.1rem;
+// }
+
+// input:invalid + .input-beforeName:after {
+//   left: 20rem;
+//   top: -2.1rem;
+// }
+
+// input:invalid + .input-beforeEmail:after {
+//   left: 14.3rem;
+//   top: -2.1rem;
+// }
+
+.registration__button {
+  width: 400px;
+  background-color: $color-pinkdark;
+  align-self: center;
+}
+
+.registration__button:hover {
+  background-color: $color-pinklight;
+}
+#errorsInfo {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+}
+
+input[type="checkbox"] {
+  accent-color: $color-pinkdark;
+  width: 30px;
+  height: 30px;
+}

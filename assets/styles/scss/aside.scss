@@ -1,0 +1,26 @@
+.aside {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+  }
+  
+  .aside-span {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 150%;
+    letter-spacing: 0.1em;
+    color: $color-black;
+    &::before {
+        @include aside-before 
+      }
+      &::after {
+        @include aside-after 
+      }
+  }
+    
+  .aside-span:hover {
+    transform: scale(1.1);
+  }

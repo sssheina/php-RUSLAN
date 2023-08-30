@@ -1,0 +1,167 @@
+.benefits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 163px 0 206px 0;
+}
+
+.benefits__aside {
+  position: absolute;
+  left: -53px;
+}
+
+.benefits__aside-span {
+  position: relative;
+}
+
+.benefits__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 120px;
+}
+
+.benefits__text-block {
+  display: flex;
+  align-items: flex-start;
+  z-index: 1;
+}
+
+.benefits__title-block {
+  display: flex;
+  flex-direction: column;
+  width: 644px;
+}
+
+.benefits__title-rectangle {
+  width: 490px;
+  height: 40px;
+  background-color: $color-pinklight;
+}
+
+.benefits__title {
+  padding-bottom: 28px;
+}
+
+.benefits__text-1 {
+  width: 275px;
+  margin-right: 111px;
+}
+
+.benefits__text-2 {
+  width: 490px;
+}
+
+.benefits__cards-block {
+  display: flex;
+  gap: 25px;
+}
+
+.benefits__card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: absolute;
+  z-index: 1;
+  width: 320px;
+  height: 267px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 40px 30px 30px 30px; 
+  top: 55%; 
+}
+
+.card-science,
+.card-security {
+  background: linear-gradient(180deg, #bfebe3 0%, #ffffff 100%);
+}
+
+.card-feminism {
+  background: linear-gradient(180deg, #ffdada 0%, #ffffff 100%);
+  }
+
+.card-lgbt {
+  background: linear-gradient(180deg, #d9f0ff 0%, #ffffff 100%);
+  }
+
+.card-benefits {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  width: 360px;
+  height: 592px;
+}
+
+.benefits__card-pic {
+  display: block;
+  max-width: 360px;
+  width: 100%;
+}
+
+
+.benefits__card-title {
+  position: relative;
+  &::before, 
+  &::after {
+    content: '';
+    position: absolute;
+    background: $color-black;
+    width: 45px;
+    height: 2px;
+    left: 0;
+  }
+  &::before {
+    top: -10px;
+  }
+  &::after {
+    bottom: -10px;
+  }
+  }
+
+
+
+.benefits__button {
+  background-color: $color-pinkdark;
+  width: 667px;
+}
+.benefits__button:hover {
+  background-color: $color-pinklight;
+}
+
+.benefits__star_1 {
+  position: absolute;
+  top: 85px;
+  left: 885px;
+}
+.benefits__star_2 {
+  position: absolute;
+  top: 412px;
+  left: 603px;
+}
+.benefits__star_3 {
+  position: absolute;
+  bottom: 180px;
+  left: -126px;
+}
+.benefits__star_4 {
+  position: absolute;
+  bottom: -92px;
+  right: 454px;
+}
+.benefits__star_5 {
+  position: absolute;
+  bottom: -42px;
+  left: 187px;
+}
+.benefits__waves_1 {
+  position: absolute;
+  bottom: -183px;
+  left: 454px;
+}
+.benefits__arrows {
+  position: absolute;
+  top: 236px;
+  right: 126px;
+}

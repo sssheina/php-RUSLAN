@@ -1,0 +1,56 @@
+.numbers {
+    position: relative;
+    width: 100vw;
+    height: 455px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #D9F0FF 7.29%, #BFEBE3 100%);
+}
+
+.numbers__wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.numbers__numbers {
+    display: flex;
+    flex-direction:column;
+    width: 386px;
+    height: 285px;
+    padding-top: 160px;
+font-weight: 500;
+font-size: 74px;
+color: $color-black;
+z-index: 1;
+}
+
+.numbers__span {
+font-weight: 500;
+font-size: 24px;
+line-height: 150%;
+letter-spacing: 0.1em;
+color: $color-black;
+}
+
+.numbers__star {
+    position: absolute;
+    left: 20vw;
+  bottom: 6vh;
+  }
+
+  .numbers__waves {
+    position: absolute;
+    right: 22vw;
+  top: 8vh;
+  }
+
+  .numbers__circle_left {
+    position: absolute;
+    left: 0;
+  top: 0;
+  }
+
+  .numbers__circle_right {
+    position: absolute;
+    right: 0;
+  bottom: 0;
+  }

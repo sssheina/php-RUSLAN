@@ -1,0 +1,218 @@
+.help {
+  position: relative;
+  padding: 220px 0 260px;
+  &__title {
+    text-align: center;
+  }
+  & hr {
+    margin: 30px auto 40px;
+    max-width: 285px;
+    height: 2px;
+    border: none;
+    background: $color-black;
+  }
+  &__subtitle {
+    margin: 0 auto;
+    color: $color-black;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 150%;
+    &:nth-child(3) {
+      max-width: 613px;
+    }
+    &:nth-child(5) {
+      max-width: 800px;
+      margin-bottom: 68px;
+    }
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $color-blue;
+    width: 667px;
+    margin: 0 auto;
+  }
+  &__button:hover {
+    background: $color-bluelight;
+  }
+}
+
+.help__aside {
+  position: absolute;
+  left: -2px;
+}
+
+.help__aside-span {
+  position: relative;
+}
+
+.swiper {
+  margin: 98px 0 78px;
+  // overflow: visible;
+  width: 90%;
+  height: 855px;
+  padding-bottom: 3rem;
+  & .swiper-slide {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // max-width: 413px;
+    width: 33.33vw;
+  }
+  &__picture {
+    max-height: 500px;
+    max-width: 413px;
+    width: 100%;
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__text {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 366px;
+    width: 100%;
+    height: 100%;
+    max-height: 453px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    z-index: 2;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    & h3 {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 150%;
+      letter-spacing: 2.4px;
+      text-transform: uppercase;
+      margin: 25px 0px 0px 25px;
+    }
+    & hr {
+      width: 140px;
+      height: 2px;
+      margin: 0;
+      background: $color-black;
+      border: none;
+      margin: 0px 0px 0px 25px;
+    }
+    & .inside {
+      color: $color-black;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 150%;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      margin: 0px 0px 0px 25px;
+    }
+  }
+}
+
+.swiper-wrapper {
+  margin: 0 auto;
+}
+
+.swiper-pagination-bullet {
+  cursor: pointer;
+  opacity: 1;
+  margin: 0 5px;
+  background: $color-blackhover;
+  width: 20px;
+  height: 20px;
+}
+
+.swiper-pagination {
+  position: absolute;
+  --swiper-pagination-bottom: 0px;
+}
+
+.swiper-pagination-bullet-active {
+  background: $color-blue;
+}
+
+.swiper__text-1_inside {
+  width: 282px;
+  height: 270px;
+}
+
+.swiper__text-2_inside {
+  width: 316px;
+  height: 270px;
+}
+
+.swiper__text-3_inside {
+  width: 305px;
+  height: 210px;
+}
+.swiper__text-4_inside {
+  width: 323px;
+  height: 240px;
+}
+
+.swiper__text-5_inside {
+  width: 302px;
+  height: 240px;
+}
+
+.swiper__text-6_inside {
+  width: 323px;
+  height: 210px;
+}
+
+.swiper__text-7_inside {
+  width: 323px;
+  height: 210px;
+}
+
+.swiper__text-8_inside {
+  width: 295px;
+  height: 240px;
+}
+
+
+
+.swiper__text-1 {
+  background: linear-gradient(180deg, #bfebe3 0%, #fff 100%);
+}
+.swiper__text-2 {
+  background: linear-gradient(180deg, #ffdada 0%, #fff 100%);
+}
+.swiper__text-3 {
+  background: linear-gradient(180deg, #d9f0ff 0%, #fff 100%);
+}
+.swiper__text-4 {
+  background: linear-gradient(180deg, #bfebe3 0%, #fff 100%);
+}
+.swiper__text-5 {
+  background: linear-gradient(180deg, #ffdada 0%, #fff 100%);
+}
+.swiper__text-6 {
+  background: linear-gradient(180deg, #d9f0ff 0%, #fff 100%);
+}
+.swiper__text-7 {
+  background: linear-gradient(180deg, #bfebe3 0%, #fff 100%);
+}
+.swiper__text-8 {
+  background: linear-gradient(180deg, #ffdada 0%, #fff 100%);
+}
+
+.lunchbox {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 0 70px; /* 70px padding to create room for the arrows */
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  left: 0; /* Position the button to the left of the lunchbox */
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  right: 0; /* Position the button to the right of the lunchbox */
+}

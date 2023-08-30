@@ -1,0 +1,131 @@
+.steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 220px 0 260px;
+  &__title {
+    text-align: center;
+  }
+  & hr {
+    max-width: 285px;
+    margin: 30px auto 40px;
+    background: $color-black;
+    height: 2px;
+    border: none;
+  }
+  &__subtitle {
+    margin: 0 auto;
+    max-width: 375px;
+    text-align: center;
+    color: $color-black;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  &__cards {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 19px;
+    margin: 90px 0 120px;
+  }
+  &__arrow {
+    transition: 0.4s ease;
+    &:hover {
+      transform: translateX(4px);
+    }
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    & button {
+      max-width: 667px;
+      width: 100%;
+      background: $color-greenlight;
+    }
+  }
+}
+
+.steps__aside {
+  position: absolute;
+  left: -49px;
+}
+
+.steps__aside-span {
+  position: relative;
+}
+.steps__card {
+  box-sizing: border-box;
+  max-width: 313px;
+  min-height: 266px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+  transition: 0.4s ease;
+  &:hover {
+    transform: translateY(-4px);
+  }
+  &:nth-of-type(3n + 1) {
+    background: linear-gradient(180deg, #bfebe3 0%, #fff 100%);
+  }
+  &:nth-of-type(2) {
+    background: linear-gradient(180deg, #d9f0ff 0%, #fff 100%);
+  }
+  &:nth-of-type(3) {
+    background: linear-gradient(180deg, #ffdada 0%, #fff 100%);
+  }
+  & h3 {
+    position: relative;
+    margin-top: 10px;
+    letter-spacing: 2.4px;
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      width: 45px;
+      height: 2px;
+      background: $color-black;
+    }
+    &::before {
+      top: -10px;
+    }
+    &::after {
+      bottom: -10px;
+    }
+  }
+  & p {
+    color: $color-black;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 150%;
+  }
+}
+
+.steps__star_blue {
+  position: absolute;
+  top: -200px;
+  left: 300px;
+}
+.steps__wave {
+  position: absolute;
+  &:nth-child(2) {
+    top: -60px;
+    right: 300px;
+  }
+  &:nth-child(3) {
+    left: 40px;
+    bottom: -110px;
+  }
+}
+.steps__spiral {
+  position: absolute;
+  right: -10px;
+  bottom: -216px;
+}

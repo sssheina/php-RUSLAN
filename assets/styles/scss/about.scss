@@ -1,0 +1,150 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  // height: 1940px;
+  background-color: $color-white;
+  padding: 220px 0 260px
+}
+
+.about__aside {
+  position: absolute;
+  left: -2px;
+}
+
+.about__aside-span {
+  position: relative;
+}
+.about__wrapper {
+  display: flex;
+}
+.about__left-side {
+  position: relative;
+  width: 20.21vw;
+  // height: 100vh;
+}
+.about__right-side {
+  display: flex;
+  position: relative;
+  // width: 60vw;
+  // height: 100vh;
+}
+
+.about__pic {
+  position: absolute;
+  top: -5%;
+  left: 0;
+  width: 490px;
+  height: 655px;
+  z-index: 1;
+}
+
+.about__dawn {
+  position: absolute;
+  top: 146vh;
+  right: -17vh;
+  z-index: 1;
+}
+.about__star_1 {
+  position: absolute;
+  top: 154vh;
+  left: 19vh;
+}
+.about__star_2 {
+  position: absolute;
+  top: 48vh;
+  left: 15vh;
+}
+
+.about__text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  // width: 60vw;
+  // height: 70vh;
+  max-width: 1134px;
+  // width: 100%;
+  // height: 1352px;
+  background: linear-gradient(
+    180deg,
+    #d9f0ff 0%,
+    rgba(217, 240, 255, 0.4) 100%
+  );
+  // margin-top: 18.37vh;
+  // margin-top: 356px;
+  padding: 125px 105px 188px 230px;
+}
+
+.about__h2 {
+  // margin: 0 140px 42px 0;
+}
+.about__hr_1 {
+  margin: 0;
+  width: 140px;
+  height: 2px;
+  color: $color-black;
+  background-color: $color-black;
+  border: none;
+}
+
+.about__text {
+  position: relative;
+  max-width: 773px;
+  // margin-left: 230px;
+  // margin-right: 140px;
+  // margin-bottom: 75px;
+}
+
+.about__hr_2 {
+  color: $color-black;
+  background-color: $color-black;
+  margin: 0;
+  // margin-bottom: 30px;
+  width: 140px;
+  height: 1px;
+  border: none;
+}
+
+.about__endnote {
+  max-width: 800px;
+}
+
+.about__waves_1 {
+  position: absolute;
+  top: 269vh;
+  left: -26vh;
+}
+.about__waves_2 {
+  position: absolute;
+  top: 297vh;
+  left: 87vh;
+}
+.about__waves_3 {
+  position: absolute;
+  top: 34vh;
+  right: 24vh;
+}
+.about__star_3 {
+  position: absolute;
+  top: 34vh;
+  left: 140vh;
+}
+.about__star_4 {
+  position: absolute;
+  z-index: 1;
+  top: 69vh;
+  right: 61vh;
+}
+.about__star_5 {
+  position: absolute;
+  bottom: 8vh;
+  right: 62vh;
+}
+
+.about__circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
