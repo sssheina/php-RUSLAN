@@ -20,7 +20,9 @@ if (!error_get_last()) {
     /*$body = "
     <h2>Новое письмо</h2>
     <b>Имя:</b> $name<br>
-    <b>Почта:</b> $email<br><br>
+    <b>Почта:</b> $email<br>
+    <b>Имя:</b> $whatsApp<br>
+    <b>Имя:</b> $telegram<br><br>
     <b>Сообщение:</b><br>$text
     ";*/
     
