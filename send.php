@@ -10,6 +10,8 @@ if (!error_get_last()) {
     // Переменные, которые отправляет пользователь
     //$name = $_POST['name'] ;
     //$email = $_POST['email'];
+    //$whatsApp = $_POST['whatsApp'];
+    //$telegram = $_POST['telegram'];
     //$text = $_POST['text'];
     //$file = $_FILES['myfile'];
     
